@@ -38,7 +38,7 @@ pipeline {
          }
          stage('Create EC2 Instance') {
              steps {
-                 ansiblePlayback playbook: 'main.yaml', inventory: 'inventory'
+                 ansiblePlaybook playbook: 'main.yaml', inventory: 'inventory'
              }
          }
         //  stage('Upload to AWS') {
